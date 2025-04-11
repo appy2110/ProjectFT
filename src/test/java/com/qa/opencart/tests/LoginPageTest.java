@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
 
+//import io.qameta.allure.Epic;
+//@Epic(value = "ityit")
 public class LoginPageTest extends BaseTest {
 	
 	

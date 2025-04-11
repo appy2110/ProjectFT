@@ -1,18 +1,36 @@
-<suite name="Opencart App Test Regression Suite" thread-count="4" parallel="tests" verbose="4">
-<listeners>
-<listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
-<listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
-</listeners>
-<test name="Login Page Test">
-<classes>
-<class name="com.qa.opencart.tests.LoginPageTest">
-<methods>
-<include name="loginPageTitleTest"/>
-<include name="loginPageURLTest"/>
-<exclude name="forgotPwdLinkExistTest"/>
-<include name="loginTest"/>
-</methods>
-</class>
-</classes>
-</test>
+<suite name="Opencart App Test Regression Suite" thread-count="4"
+	parallel="tests" verbose="4">
+	<listeners>
+		<!-- <listener
+			class-name="com.qa.opencart.listeners.ExtentReportListener" /> -->
+		<listener
+			class-name="com.qa.opencart.listeners.TestAllureListener" />
+	</listeners>
+	<test name="Login Page Test">
+		<classes>
+		<class name="com.qa.opencart.tests.LoginPageTest">
+			</class>
+			
+				<!-- <methods>
+					<include name="loginPageTitleTest" />
+					<include name="loginPageURLTest" />
+					<include name="forgotPwdLinkExistTest" />
+					<include name="loginTest" />
+				</methods> -->
+		
+		</classes>
+	</test>
+	<test name="Account Page Test">
+		<classes>
+		
+			<class name="com.qa.opencart.tests.AccountPageTest">
+				<!-- <methods>
+					<include name="loginPageTitleTest" />
+					<include name="loginPageURLTest" />
+					<include name="forgotPwdLinkExistTest" />
+					<include name="loginTest" />
+				</methods> -->
+			</class>
+		</classes>
+	</test>
 </suite>

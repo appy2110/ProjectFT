@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.qa.opencart.driverFactory.DriverFactory;
+import com.qa.opencart.DriverFactory.DriverFactory;
 import com.qa.opencart.pages.AccountPage;
 import com.qa.opencart.pages.LoginPage;
 import com.qa.opencart.pages.ResultsPage;
@@ -21,6 +21,8 @@ public class BaseTest {
 	protected AccountPage accPage;
 	protected ResultsPage resultPage;
 	protected Properties prop;
+
+	protected SoftAssert softAssert;
 
 	@BeforeTest
 	public void setup() {
