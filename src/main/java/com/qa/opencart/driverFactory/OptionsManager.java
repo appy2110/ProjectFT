@@ -1,4 +1,4 @@
-package com.qa.opencart.driverFactory;
+package com.qa.opencart.DriverFactory;
 
 public class OptionsManager {
 
