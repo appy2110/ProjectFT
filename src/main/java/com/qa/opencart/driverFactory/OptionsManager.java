@@ -1,12 +1,11 @@
 package com.qa.opencart.DriverFactory;
-<<<<<<< HEAD
+
 
 import java.util.Properties;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
-=======
->>>>>>> master
+
 
 public class OptionsManager {
 
