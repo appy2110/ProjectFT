@@ -13,7 +13,7 @@ public class AppConstants {
 
 	public static final String ACCOUNTS_PAGE_TITLE = "My Account";
 	
-	public static final String ACC_PAGE_FRACTION_URL = "route=account/account";
+	public static final String ACCOUNTS_PAGE_FRACTION_URL = "route=account/account";
 	
 	public static final String SEARCH_PAGE_TITLE = "Search -";
 

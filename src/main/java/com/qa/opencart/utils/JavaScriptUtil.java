@@ -69,6 +69,13 @@ public class JavaScriptUtil {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
 	}
+	
+	public void doSendKeysByIdInJS(WebElement element,String value) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("document.getElementById("+element+").value='"+value+"';");
+	}
+	
+	//js.executeScript("document.getElementById('user_email_login').value='rbc@xyz.com';");
 
 	public void sendKeysUsingWithId(String id, String value) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

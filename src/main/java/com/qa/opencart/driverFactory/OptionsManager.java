@@ -19,8 +19,16 @@ public class OptionsManager {
 		co = new ChromeOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
 			System.out.println(".....Running the test in Headless mode.......");
-			//co.setHeadless(true);
+			// co.setHeadless(true);
 			co.addArguments("--Headless");
+		}
+		if (Boolean.parseBoolean(prop.getProperty("maxim"))) {
+			System.out.println(".....Running the test in manimum window mode.......");
+			// co.setHeadless(true);
+			co.addArguments("start-maximized");
+			// disable popups
+			// options.setExperimentalOption("excludeSwitches",
+			// Arrays.asList("disable-popup-blocking"));
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			System.out.println(".....Running the test in Incognito mode.......");

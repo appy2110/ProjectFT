@@ -98,10 +98,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>3.14.0</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>8</source>
+					<target>8</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -116,12 +116,12 @@
 <!--					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 -->					<suiteXmlFiles>
 						<suiteXmlFile>
-							src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+							src/test/resources/testrunners/testng.xml</suiteXmlFile>
 						<!--  <suiteXmlFile> ${suiteXmlFiles} </suiteXmlFile>  -->
 					</suiteXmlFiles>
-					<!--  <argLine>
+					<argLine>
 					-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" 
-						</argLine>  -->
+						</argLine>
 				</configuration>
 			</plugin>
 			<plugin>

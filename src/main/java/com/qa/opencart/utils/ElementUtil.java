@@ -44,6 +44,7 @@ public class ElementUtil {
 
 	public void doSendKeys(By locator, String value) {
 		WebElement ele = getElement(locator);
+		jsUtil.drawBorder(ele);
 		ele.clear();
 		ele.sendKeys(value);
 	}

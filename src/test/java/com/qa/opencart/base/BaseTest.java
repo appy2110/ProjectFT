@@ -27,7 +27,7 @@ public class BaseTest {
 	@BeforeTest
 	public void setup() {
 
-		System.out.println("out2 there is");
+		System.out.println("out there is");
 		df = new DriverFactory();
 		prop = df.initProp();
 		driver = df.browserName(prop);
@@ -37,7 +37,7 @@ public class BaseTest {
 
 	@AfterTest
 	public void tearDown() {
-
+		driver.quit();
 		System.out.println("over there is");
 
 	}
