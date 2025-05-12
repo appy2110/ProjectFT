@@ -15,6 +15,7 @@ import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.pages.AccountPage;
 import com.qa.opencart.pages.ResultsPage;
 import com.qa.opencart.utils.AppConstants;
+import com.qa.opencart.utils.AppErrors;
 import com.qa.opencart.utils.JavaScriptUtil;
 
 import io.qameta.allure.Description;
@@ -69,7 +70,6 @@ public class AccountPageTest extends BaseTest {
 	public void accPageUrl() {
 		String accPageUrl = accPage.getAccPageUrl();
 		System.out.println("Account Page Title Test" + accPageUrl);
-		Assert.assertEquals(accPageUrl, AppConstants.ACCOUNTS_PAGE_FRACTION_URL);
-		
+		Assert.assertTrue(actURL.contains(AppConstants.ACCOUNTS_PAGE_FRACTION_URL), AppErrors.NO_URL_MATCHED);		
 	}
 }
