@@ -69,7 +69,7 @@ public class AccountPageTest extends BaseTest {
 	public void accPageUrl() {
 		String accPageUrl = accPage.getAccPageUrl();
 		System.out.println("Account Page Title Test" + accPageUrl);
-		Assert.assertEquals(accPageUrl, AppConstants.ACCOUNTS_PAGE_TITLE);
+		Assert.assertEquals(accPageUrl, AppConstants.ACCOUNTS_PAGE_FRACTION_URL);
 		
 	}
 }
