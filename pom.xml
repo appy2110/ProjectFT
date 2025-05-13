@@ -12,6 +12,8 @@
 		<extentreports-version>5.1.2</extentreports-version>
 		<aspectj.version>1.9.23</aspectj.version>
 
+<!-- github demo -->
+
 	</properties>
 	<dependencies>
 		<dependency>
